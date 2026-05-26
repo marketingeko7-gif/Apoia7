@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="theme-color"
+        content="#0c3b5c"
+    >
+
+    <meta
+        name="msapplication-navbutton-color"
+        content="#0c3b5c"
+    >
+
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+    >
+
+    <title>Hub</title>
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <!-- Ícone navegador / PWA -->
+    <link
+        rel="icon"
+        href="img/eko7.png"
+    >
+
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <meta name="theme-color" content="#0c3b5c">
+
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="apple-mobile-web-app-title" content="Hub Eko'7">
+
+    <link rel="apple-touch-icon" href="img/eko7.png">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section
+            class="hero"
+            aria-label="Introdução"
+        >
+            <!-- LOGO -->
+            <img
+                src="img/eko7.png"
+                alt="Eko'7"
+                class="logo"
+            >
+
+        </section>
+
+
+        <section
+            class="stats"
+            aria-label="Estatísticas de atalhos"
+        >
+
+            <div class="stat-list">
+
+                <h2>
+                    Mais Acessados
+                </h2>
+
+                <div
+                    id="mostAccessedList"
+                    class="stat-cards"
+                ></div>
+
+            </div>
+
+
+            <div class="stat-list">
+
+                <h2>
+                    Recentes
+                </h2>
+
+                <div
+                    id="recentList"
+                    class="stat-cards"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <div class="typing-wrapper">
+
+            <div
+                id="typingTextTop"
+                class="typing-text"
+            ></div>
+
+        </div>
+
+        <div class="search-wrapper">
+
+            <input
+                type="text"
+                id="searchInput"
+                autocomplete="off"
+                aria-label="Pesquisar materiais"
+            >
+
+
+            <button
+                id="searchButton"
+                class="search-button"
+                aria-label="Pesquisar"
+            >
+
+                ➤
+
+            </button>
+
+
+        </div>
+
+        <div
+            id="typingTextBottom"
+            class="typing-text bottom-text"
+        ></div>
+
+        <section
+            class="shortcuts-grid"
+            id="shortcutsGrid"
+            aria-label="Lista de materiais"
+        ></section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
